@@ -2,7 +2,7 @@ package merge
 
 // 归并排序
 
-func MergeSort(arr []int) []int {
+func MergeSort(arr []int) []int { // 采用自上而下的递归方法
 	len := len(arr)
 	if len < 2 {
 		return  arr
