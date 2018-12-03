@@ -22,3 +22,7 @@
 
 ##### standard-lib-learn 标准库学习
 - go-strings strings库的学习
+- go-strconv strconv库的学习
+- char-stitching go字符串拼接的方法及性能
+- go-unicode unicode库
+    - go-utf8 utf8库的学习
