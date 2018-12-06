@@ -67,7 +67,9 @@ func (arr *Array) Add(index int, e interface{}) {
 	}
 
 	if arr.size == cap(arr.data) {
-		panic("Add failed.Array is full.")
+		//panic("Add failed.Array is full.")
+		arr = resize(2*cap(arr.data), arr)
+		fmt.Println(arr.String())
 	}
 
 	if index < 0 || index > arr.size {
@@ -159,6 +161,11 @@ func (arr *Array) Remove(index int) interface{} {
 	}
 	arr.size--
 	//arr.data[arr.size] = 0 // loitering objects != memory leak
+
+	if arr.size == cap(arr.data)/2 {
+		arr = resize(cap(arr.data)/2, arr)
+	}
+
 	return res
 }
 
@@ -224,4 +231,14 @@ func (arr *Array) String() string {
 	}
 	buffer.WriteString(str3)
 	return buffer.String()
+}
+
+// 实现动态数组
+func resize(cap int, arr *Array) *Array {
+	newdata := make([]interface{}, cap)
+	for i := 0; i < arr.size; i++ {
+		newdata[i] = arr.data[i]
+	}
+	arr.data = newdata
+	return arr
 }
