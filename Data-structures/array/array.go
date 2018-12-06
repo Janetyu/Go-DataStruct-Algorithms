@@ -13,35 +13,35 @@ type Array struct {
 
 // 指定容量创建数组
 func CreateArray(cap int) *Array {
-	data := make([]int,cap) // 若不指定 cap 的大小，则自动设置为 len == cap
+	data := make([]int, cap) // 若不指定 cap 的大小，则自动设置为 len == cap
 	size := 0
-	return &Array{data,size}
+	return &Array{data, size}
 }
 
 // 无参数创建默认容量为10的数组
 func CreatedefaultArray() *Array {
-	data := make([]int,10)
+	data := make([]int, 10)
 	size := 0
-	return &Array{data,size}
+	return &Array{data, size}
 }
 
 // 获取数组的长度
-func (arr *Array)GetArrLen() int {
+func (arr *Array) GetArrLen() int {
 	return arr.size
 }
 
 // 获取数组的容量
-func (arr *Array)GetArrCap() int {
+func (arr *Array) GetArrCap() int {
 	return cap(arr.data)
 }
 
 // 判断数组是否为空
-func (arr *Array)IsEmpty() bool {
+func (arr *Array) IsEmpty() bool {
 	return arr.size == 0
 }
 
 // 向数组的末尾添加一个元素
-func (arr *Array)AddLast(e int) {
+func (arr *Array) AddLast(e int) {
 	//if arr.size == cap(arr.data) {
 	//	panic("AddLast failed.Array is full.")
 	//}
@@ -50,16 +50,16 @@ func (arr *Array)AddLast(e int) {
 	//
 	//arr.size += 1
 
-	arr.Add(arr.size,e)
+	arr.Add(arr.size, e)
 }
 
 // 向数组的首部添加一个元素
-func (arr *Array)AddFirst(e int)  {
-	arr.Add(0,e)
+func (arr *Array) AddFirst(e int) {
+	arr.Add(0, e)
 }
 
 // 向数组中插入一个元素
-func (arr *Array)Add(index,e int)  {
+func (arr *Array) Add(index, e int) {
 
 	if arr.size == cap(arr.data) {
 		panic("Add failed.Array is full.")
@@ -70,27 +70,41 @@ func (arr *Array)Add(index,e int)  {
 	}
 
 	for i := arr.size - 1; i >= index; i-- {
-		arr.data[i + 1] = arr.data[i]
+		arr.data[i+1] = arr.data[i]
 	}
 	arr.data[index] = e
 	arr.size += 1
 }
 
-func (arr *Array)String() string {
+// 获取index索引位置的元素
+func (arr *Array) Get(index int) int {
+	if index < 0 || index >= arr.size {
+		panic("Get failed.Index is illegal.")
+	}
+	return arr.data[index]
+}
+
+// 修改index索引位置的元素
+func (arr *Array) Set(index, e int) {
+	if index < 0 || index >= arr.size {
+		panic("Set failed.Index is illegal.")
+	}
+	arr.data[index] = e
+}
+
+func (arr *Array) String() string {
 	var buffer bytes.Buffer
-	str1 := fmt.Sprintf("Array: size = %d, capacity = %d \n",arr.size, cap(arr.data))
+	str1 := fmt.Sprintf("Array: size = %d, capacity = %d \n", arr.size, cap(arr.data))
 	str2 := "["
 	str3 := "]"
 	buffer.WriteString(str1)
 	buffer.WriteString(str2)
-	for i := 0; i < arr.size ; i++ {
+	for i := 0; i < arr.size; i++ {
 		buffer.WriteString(strconv.Itoa(arr.data[i]))
-		if i != arr.size - 1 {
+		if i != arr.size-1 {
 			buffer.WriteString(",")
 		}
 	}
 	buffer.WriteString(str3)
 	return buffer.String()
 }
-
-
