@@ -3,26 +3,27 @@ package array
 import (
 	"bytes"
 	"fmt"
-	"strconv"
+	"reflect"
 )
 
 type Array struct {
-	data []int
-	size int
+	arrType reflect.Kind
+	data    []interface{}
+	size    int
 }
 
-// 指定容量创建数组
-func CreateArray(cap int) *Array {
-	data := make([]int, cap) // 若不指定 cap 的大小，则自动设置为 len == cap
+// 指定容量创建数组，可自定义数组类型
+func CreateArray(arrType reflect.Kind, cap int) *Array {
+	data := make([]interface{}, cap) // 若不指定 cap 的大小，则自动设置为 len == cap
 	size := 0
-	return &Array{data, size}
+	return &Array{arrType, data, size}
 }
 
-// 无参数创建默认容量为10的数组
-func CreatedefaultArray() *Array {
-	data := make([]int, 10)
+// 无参数创建默认容量为10的数组，可自定义数组类型
+func CreatedefaultArray(arrType reflect.Kind) *Array {
+	data := make([]interface{}, 10)
 	size := 0
-	return &Array{data, size}
+	return &Array{arrType, data, size}
 }
 
 // 获取数组的长度
@@ -41,7 +42,7 @@ func (arr *Array) IsEmpty() bool {
 }
 
 // 向数组的末尾添加一个元素
-func (arr *Array) AddLast(e int) {
+func (arr *Array) AddLast(e interface{}) {
 	//if arr.size == cap(arr.data) {
 	//	panic("AddLast failed.Array is full.")
 	//}
@@ -54,12 +55,16 @@ func (arr *Array) AddLast(e int) {
 }
 
 // 向数组的首部添加一个元素
-func (arr *Array) AddFirst(e int) {
+func (arr *Array) AddFirst(e interface{}) {
 	arr.Add(0, e)
 }
 
 // 向数组中插入一个元素
-func (arr *Array) Add(index, e int) {
+func (arr *Array) Add(index int, e interface{}) {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("Add failed.element type worried.")
+	}
 
 	if arr.size == cap(arr.data) {
 		panic("Add failed.Array is full.")
@@ -77,7 +82,7 @@ func (arr *Array) Add(index, e int) {
 }
 
 // 获取index索引位置的元素
-func (arr *Array) Get(index int) int {
+func (arr *Array) Get(index int) interface{} {
 	if index < 0 || index >= arr.size {
 		panic("Get failed.Index is illegal.")
 	}
@@ -85,7 +90,12 @@ func (arr *Array) Get(index int) int {
 }
 
 // 修改index索引位置的元素
-func (arr *Array) Set(index, e int) {
+func (arr *Array) Set(index int, e interface{}) {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("Set failed.element type worried.")
+	}
+
 	if index < 0 || index >= arr.size {
 		panic("Set failed.Index is illegal.")
 	}
@@ -93,7 +103,12 @@ func (arr *Array) Set(index, e int) {
 }
 
 // 查找数组中是否有元素e
-func (arr *Array) Contains(e int) bool {
+func (arr *Array) Contains(e interface{}) bool {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("IsContains failed.element type worried.")
+	}
+
 	for _, v := range arr.data {
 		if e == v {
 			return true
@@ -103,7 +118,12 @@ func (arr *Array) Contains(e int) bool {
 }
 
 // 查找数组中元素e所在的索引，如果不存在元素e，则返回-1
-func (arr *Array) Find(e int) int {
+func (arr *Array) Find(e interface{}) int {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("Find failed.element type worried.")
+	}
+
 	for i, v := range arr.data {
 		if e == v {
 			return i
@@ -113,7 +133,12 @@ func (arr *Array) Find(e int) int {
 }
 
 // 查找数组中所有元素e所在的索引，如果不存在元素e，则返回空slice
-func (arr *Array) FindAll(e int) []int {
+func (arr *Array) FindAll(e interface{}) []int {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("FindAll failed.element type worried.")
+	}
+
 	indexs := []int{}
 	for i, v := range arr.data {
 		if e == v {
@@ -124,7 +149,7 @@ func (arr *Array) FindAll(e int) []int {
 }
 
 // 从数组中删除index位置的元素，返回删除的元素
-func (arr *Array) Remove(index int) int {
+func (arr *Array) Remove(index int) interface{} {
 	if index < 0 || index >= arr.size {
 		panic("Remove failed.Index is illegal.")
 	}
@@ -133,21 +158,27 @@ func (arr *Array) Remove(index int) int {
 		arr.data[i-1] = arr.data[i]
 	}
 	arr.size--
+	//arr.data[arr.size] = 0 // loitering objects != memory leak
 	return res
 }
 
 // 从数组中删除第一个元素，返回删除的元素
-func (arr *Array) RemoveFirst() int {
+func (arr *Array) RemoveFirst() interface{} {
 	return arr.Remove(0)
 }
 
 // 从数组中删除最后一个元素，返回删除的元素
-func (arr *Array) RemoveLast() int {
+func (arr *Array) RemoveLast() interface{} {
 	return arr.Remove(arr.size - 1)
 }
 
 // 从数组中删除元素e
-func (arr *Array) RemoveElement(e int) bool {
+func (arr *Array) RemoveElement(e interface{}) bool {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("RemoveElement failed.element type worried.")
+	}
+
 	index := arr.Find(e)
 	if index != -1 {
 		arr.Remove(index)
@@ -157,7 +188,12 @@ func (arr *Array) RemoveElement(e int) bool {
 }
 
 // 从数组中删除所有的元素e
-func (arr *Array) RemoveAllElement(e int) bool {
+func (arr *Array) RemoveAllElement(e interface{}) bool {
+	etype := reflect.TypeOf(e).Kind()
+	if etype != arr.arrType {
+		panic("RemoveAllElement failed.element type worried.")
+	}
+
 	indexs := arr.FindAll(e)
 
 	if len(indexs) == 0 {
@@ -181,7 +217,7 @@ func (arr *Array) String() string {
 	buffer.WriteString(str1)
 	buffer.WriteString(str2)
 	for i := 0; i < arr.size; i++ {
-		buffer.WriteString(strconv.Itoa(arr.data[i]))
+		buffer.WriteString(fmt.Sprintf("%v", arr.data[i]))
 		if i != arr.size-1 {
 			buffer.WriteString(",")
 		}
