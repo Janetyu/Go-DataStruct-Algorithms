@@ -162,7 +162,7 @@ func (arr *Array) Remove(index int) interface{} {
 	arr.size--
 	//arr.data[arr.size] = 0 // loitering objects != memory leak
 
-	if arr.size == cap(arr.data)/2 {
+	if arr.size == cap(arr.data)/4 && cap(arr.data)/2 != 0 { // 实现 lazy 机制，来减少复杂度震荡，优化算法性能
 		arr = resize(cap(arr.data)/2, arr)
 	}
 
