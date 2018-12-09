@@ -91,6 +91,16 @@ func (arr *Array) Get(index int) interface{} {
 	return arr.data[index]
 }
 
+// 获取第一个元素
+func (arr *Array)GetFirst() interface{} {
+	return arr.Get(arr.size - 1)
+}
+
+// 获取最后一个元素
+func (arr *Array)GetLast() interface{} {
+	return arr.Get(0)
+}
+
 // 修改index索引位置的元素
 func (arr *Array) Set(index int, e interface{}) {
 	etype := reflect.TypeOf(e).Kind()
