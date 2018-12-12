@@ -1,11 +1,11 @@
 package queue
 
 import (
-	"testing"
 	"reflect"
+	"testing"
 )
 
-func Test_Queue(t *testing.T)  {
+func Test_Queue(t *testing.T) {
 	var queue Queue
 	queue = CreatedefaultQueue(reflect.Int)
 
@@ -13,7 +13,7 @@ func Test_Queue(t *testing.T)  {
 		queue.Enqueue(i)
 		t.Log(queue)
 
-		if (i % 3 == 2) {
+		if i%3 == 2 {
 			queue.Dequeue()
 			t.Log(queue)
 		}

@@ -12,7 +12,7 @@ func QuickSort1(arr []int) []int {
 		for {
 			for i+1 < len {
 				i++
-				if key >= arr[j]{
+				if key >= arr[j] {
 					break
 				}
 				j--
@@ -22,7 +22,7 @@ func QuickSort1(arr []int) []int {
 				break
 			}
 
-			arr = swap(arr,i,j)
+			arr = swap(arr, i, j)
 		}
 	}
 
@@ -37,7 +37,7 @@ func QuickSort3(arr []int) []int {
 	return nil
 }
 
-func swap(arr []int, a,b int) []int {
-	arr[a],arr[b] = arr[b],arr[a]
+func swap(arr []int, a, b int) []int {
+	arr[a], arr[b] = arr[b], arr[a]
 	return arr
 }

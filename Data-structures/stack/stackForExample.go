@@ -4,7 +4,7 @@ import "reflect"
 
 func isValid(s string) bool {
 	var topChar byte
-	m := map[byte]byte{')':'(','}':'{',']':'['}
+	m := map[byte]byte{')': '(', '}': '{', ']': '['}
 	b := []byte(s)
 	stack := CreatedefaultStack(reflect.Uint8)
 

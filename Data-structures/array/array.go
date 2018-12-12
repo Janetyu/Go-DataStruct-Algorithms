@@ -92,12 +92,12 @@ func (arr *Array) Get(index int) interface{} {
 }
 
 // 获取第一个元素
-func (arr *Array)GetFirst() interface{} {
+func (arr *Array) GetFirst() interface{} {
 	return arr.Get(arr.size - 1)
 }
 
 // 获取最后一个元素
-func (arr *Array)GetLast() interface{} {
+func (arr *Array) GetLast() interface{} {
 	return arr.Get(0)
 }
 

@@ -10,7 +10,7 @@ IndexAny 返回字符串 chars 中的任何一个字符在字符串 s 中第一�
 如果找不到，则返回 -1，如果 chars 为空，则返回 -1
 
 func IndexAny(s, chars string) int
- */
+*/
 
 import (
 	"fmt"
@@ -21,8 +21,8 @@ func main() {
 	substr := "is"
 	substr2 := "Hi"
 	str1 := "This is a Go program!"
-	fmt.Println(strings.Index(str1, substr)) //输出2
-	fmt.Println(strings.Index(str1, substr2))//输出-1
+	fmt.Println(strings.Index(str1, substr))  //输出2
+	fmt.Println(strings.Index(str1, substr2)) //输出-1
 
 	s := "Hello,世界! Hello!"
 	i := strings.IndexAny(s, "abc")

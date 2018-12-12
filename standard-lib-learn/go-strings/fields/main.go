@@ -6,7 +6,7 @@ Fields 以连续的空白字符为分隔符，将 s 切分成多个子串，结�
 如果 s 中只包含空白字符，则返回一个空列表
 
 strings.Fields(s string) []string
- */
+*/
 
 import (
 	"fmt"

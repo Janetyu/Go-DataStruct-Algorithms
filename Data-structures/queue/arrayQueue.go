@@ -2,9 +2,9 @@ package queue
 
 import (
 	"Go-DataStruct-Algorithms/Data-structures/array"
-	"reflect"
 	"bytes"
 	"fmt"
+	"reflect"
 )
 
 type ArrayQueue struct {
@@ -12,34 +12,34 @@ type ArrayQueue struct {
 }
 
 func CreateQueue(queueType reflect.Kind, cap int) *ArrayQueue {
-	return &ArrayQueue{array.CreateArray(queueType,cap)}
+	return &ArrayQueue{array.CreateArray(queueType, cap)}
 }
 
 func CreatedefaultQueue(queueType reflect.Kind) *ArrayQueue {
 	return &ArrayQueue{array.CreatedefaultArray(queueType)}
 }
 
-func (queue *ArrayQueue)GetSize() int {
+func (queue *ArrayQueue) GetSize() int {
 	return queue.array.GetArrLen()
 }
 
-func (queue *ArrayQueue)IsEmpty() bool {
+func (queue *ArrayQueue) IsEmpty() bool {
 	return queue.array.IsEmpty()
 }
 
-func (queue *ArrayQueue)GetCapacity() int {
+func (queue *ArrayQueue) GetCapacity() int {
 	return queue.array.GetArrCap()
 }
 
-func (queue *ArrayQueue)Enqueue(e interface{})  {
+func (queue *ArrayQueue) Enqueue(e interface{}) {
 	queue.array.AddLast(e)
 }
 
-func (queue *ArrayQueue)Dequeue() interface{} {
+func (queue *ArrayQueue) Dequeue() interface{} {
 	return queue.array.RemoveFirst()
 }
 
-func (queue *ArrayQueue)GetFront() interface{} {
+func (queue *ArrayQueue) GetFront() interface{} {
 	return queue.array.GetFirst()
 }
 

@@ -24,17 +24,17 @@ func (r *Replacer) Replace(s string) string
 
 WriteString 对 s 进行“查找和替换”，然后将结果写入 w 中
 func (r *Replacer) WriteString(w io.Writer, s string) (n int, err error)
- */
+*/
 
 import (
 	"fmt"
-	"strings"
 	"os"
+	"strings"
 )
 
 func main() {
 	str1 := "我爱你熙中国熙"
-	fmt.Println(strings.Replace(str1, "熙", "", 1)) //我爱你中国熙
+	fmt.Println(strings.Replace(str1, "熙", "", 1))  //我爱你中国熙
 	fmt.Println(strings.Replace(str1, "熙", "", -1)) //我爱你中国
 
 	srp := strings.NewReplacer("Hello", "你好", "World", "世界", "!", "！")

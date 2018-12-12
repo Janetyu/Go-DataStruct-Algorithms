@@ -27,7 +27,7 @@ bitSize 则使用 32 表示 float32，用 64 表示 float64。
 第 2 个是可能出现的错误，因此，我们一般使用以下形式来进行从字符串到其它类型的转换:
 
 val, err = strconv.Atoi(s)
- */
+*/
 
 import (
 	"fmt"

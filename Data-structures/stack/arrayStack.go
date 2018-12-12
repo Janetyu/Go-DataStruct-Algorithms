@@ -1,10 +1,10 @@
 package stack
 
 import (
-	"reflect"
 	"Go-DataStruct-Algorithms/Data-structures/array"
 	"bytes"
 	"fmt"
+	"reflect"
 )
 
 type ArrayStack struct {
@@ -13,7 +13,7 @@ type ArrayStack struct {
 
 // 指定容量创建栈，可自定义数组类型
 func CreateStack(stackType reflect.Kind, cap int) *ArrayStack {
-	return &ArrayStack{array.CreateArray(stackType,cap)}
+	return &ArrayStack{array.CreateArray(stackType, cap)}
 }
 
 // 无参数创建默认容量为10的栈，可自定义数组类型
@@ -21,27 +21,27 @@ func CreatedefaultStack(stackType reflect.Kind) *ArrayStack {
 	return &ArrayStack{array.CreatedefaultArray(stackType)}
 }
 
-func (stack *ArrayStack)GetSize() int {
+func (stack *ArrayStack) GetSize() int {
 	return stack.array.GetArrLen()
 }
 
-func (stack *ArrayStack)IsEmpty() bool {
+func (stack *ArrayStack) IsEmpty() bool {
 	return stack.array.IsEmpty()
 }
 
-func (stack *ArrayStack)GetCapacity() int {
+func (stack *ArrayStack) GetCapacity() int {
 	return stack.array.GetArrCap()
 }
 
-func (stack *ArrayStack)Push(e interface{}) {
+func (stack *ArrayStack) Push(e interface{}) {
 	stack.array.AddLast(e)
 }
 
-func (stack *ArrayStack)Pop() interface{} {
+func (stack *ArrayStack) Pop() interface{} {
 	return stack.array.RemoveLast()
 }
 
-func (stack *ArrayStack)Peek() interface{} {
+func (stack *ArrayStack) Peek() interface{} {
 	return stack.array.GetLast()
 }
 

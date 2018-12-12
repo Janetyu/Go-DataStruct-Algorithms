@@ -10,13 +10,13 @@ package char_stitching
 性能要求不太高的场合，直接使用运算符，代码更简短清晰，能获得比较好的可读性
 如果需要拼接的不仅仅是字符串，还有数字之类的其他需求的话，可以考虑fmt.Sprintf()
 \
- */
+*/
 
 import (
-	"testing"
+	"bytes"
 	"fmt"
 	"strings"
-	"bytes"
+	"testing"
 )
 
 // golang里面的字符串都是不可变的，每次运算都会产生一个新的字符串，所以会产生很多临时的无用的字符串，
@@ -52,8 +52,6 @@ func BenchmarkAddStringWithJoin(b *testing.B) {
 	}
 }
 
-
-
 //这个比较理想，可以当成可变字符使用，对内存的增长也有优化，如果能预估字符串的长度，
 // 还可以用buffer.Grow()接口来设置capacity
 //buffer.WriteString()
@@ -75,4 +73,4 @@ BenchmarkAddStringWithOperator-8            50000000             30.3 ns/op
 BenchmarkAddStringWithSprintf-8             5000000              261  ns/op
 BenchmarkAddStringWithJoin-8                30000000             58.7 ns/op
 BenchmarkAddStringWithBuffer-8              2000000000           0.00 ns/op
- */
+*/

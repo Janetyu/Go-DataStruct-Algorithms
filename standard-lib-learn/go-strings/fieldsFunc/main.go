@@ -6,11 +6,11 @@ FieldsFunc 以一个或多个满足 f(rune) 的字符为分隔符，
 如果 s 中没有满足 f(rune) 的字符，则返回一个空列表。
 
 func FieldsFunc(s string, f func(rune) bool) []string
- */
+*/
 
 import (
-	"strings"
 	"fmt"
+	"strings"
 )
 
 func isSlash(r rune) bool {

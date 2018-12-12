@@ -5,11 +5,11 @@ EqualFold 判断 s 和 t 是否相等。忽略大小写，同时它还会对特�
 比如将“ϕ”转换为“Φ”、将“Ǆ”转换为“ǅ”等，然后再进行比较
 
 func EqualFold(s, t string) bool
- */
+*/
 
 import (
-	"strings"
 	"fmt"
+	"strings"
 )
 
 func main() {

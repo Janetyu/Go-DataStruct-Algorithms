@@ -7,4 +7,3 @@ type Queue interface {
 	Dequeue() interface{}
 	GetFront() interface{}
 }
-

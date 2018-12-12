@@ -81,7 +81,7 @@ func (SpecialCase) ToTitle
 SimpleFold(r rune) rune
 在 unicode 标准字符映射中查找与 rune r 互相对应的 unicode 码值。向码值大的方向循环查找。
 互相对应指的是同一个字符可能出现的多种写法。
- */
+*/
 
 func main() {
 	// 判断字符是否出现在汉字集合中

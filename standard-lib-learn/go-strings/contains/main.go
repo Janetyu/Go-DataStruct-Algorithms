@@ -13,7 +13,7 @@ func ContainsAny(s, chars string) bool
 ContainsRune 判断字符串 s 中是否包含字符 r
 
 func ContainsRune(s string, r rune) bool
- */
+*/
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ import (
 func main() {
 	substr := "is"
 	str1 := "This is a Go project!"
-	fmt.Println(strings.Contains(str1,substr))
+	fmt.Println(strings.Contains(str1, substr))
 
 	s := "Hello,世界!"
 	b := strings.ContainsAny(s, "abc")

@@ -4,7 +4,7 @@ package main
 Repeat 用于重复 count 次字符串 s 并返回一个新的字符串:
 
 strings.Repeat(s string, count int) string
- */
+*/
 
 import (
 	"fmt"

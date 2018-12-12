@@ -14,7 +14,7 @@ import "errors"
 因为 nums[0] + nums[1] = 2 + 7 = 9
 
 所以返回 [0, 1]
- */
+*/
 
 /*
 暴力解法 最快为60ms
@@ -27,18 +27,17 @@ import "errors"
 */
 
 func twosumOne(nums []int, target int) []int {
-	var i,j int
+	var i, j int
 	length := len(nums)
-	for i = 0 ; i < length - 1 ; i++ {
-		for j = i + 1; j < length; j ++ {
-			if nums[i] + nums[j] == target {
-				return []int{i,j}
+	for i = 0; i < length-1; i++ {
+		for j = i + 1; j < length; j++ {
+			if nums[i]+nums[j] == target {
+				return []int{i, j}
 			}
 		}
 	}
 	panic(errors.New("No two sum solution"))
 }
-
 
 /*
 两遍哈希表 最快为8ms
@@ -56,7 +55,7 @@ func twosumOne(nums []int, target int) []int {
 由于哈希表将查找时间缩短到 O(1) ，所以时间复杂度为 O(n)。
 
 空间复杂度：O(n)， 所需的额外空间取决于哈希表中存储的元素数量，该表中存储了 n 个元素。
- */
+*/
 func twosumTwo(nums []int, target int) []int {
 	map1 := make(map[int]int)
 	length := len(nums)
@@ -66,13 +65,12 @@ func twosumTwo(nums []int, target int) []int {
 
 	for j := 0; j < len(nums); j++ {
 		elem := target - nums[j]
-		if _, ok := map1[elem];ok && map1[elem] != j {
-			return []int{j,map1[elem]}
+		if _, ok := map1[elem]; ok && map1[elem] != j {
+			return []int{j, map1[elem]}
 		}
 	}
 	panic(errors.New("No two sum solution"))
 }
-
 
 /*
 一遍哈希表 最快为8 ms
@@ -84,14 +82,14 @@ func twosumTwo(nums []int, target int) []int {
 时间复杂度：O(n)， 我们只遍历了包含有 n 个元素的列表一次。在表中进行的每次查找只花费 O(1) 的时间。
 
 空间复杂度：O(n)， 所需的额外空间取决于哈希表中存储的元素数量，该表最多需要存储 n 个元素。
- */
+*/
 func twosumThree(nums []int, target int) []int {
 	map1 := make(map[int]int)
 
-	for i:= 0;i < len(nums); i++ {
+	for i := 0; i < len(nums); i++ {
 		elem := target - nums[i]
 		if _, ok := map1[elem]; ok {
-			return []int{map1[elem],i}
+			return []int{map1[elem], i}
 		}
 		map1[nums[i]] = i
 	}

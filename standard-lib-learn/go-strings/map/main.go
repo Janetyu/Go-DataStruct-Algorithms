@@ -5,11 +5,11 @@ Map 将 s 中满足 mapping(rune) 的字符替换为 mapping(rune) 的返回值�
 如果 mapping(rune) 返回负数，则相应的字符将被删除。
 
 func Map(mapping func(rune) rune, s string) string
- */
+*/
 
 import (
-	"strings"
 	"fmt"
+	"strings"
 )
 
 func Slash(r rune) rune {

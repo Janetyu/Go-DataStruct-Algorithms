@@ -51,20 +51,20 @@ func (r *Reader) Seek(offset int64, whence int) (int64, error)
 
 WriteTo 将 r.i 之后的数据写入接口 w 中
 func (r *Reader) WriteTo(w io.Writer) (n int64, err error)
- */
+*/
 
 import (
-	"strings"
-	"fmt"
 	"bytes"
+	"fmt"
+	"strings"
 )
 
 // Reader 结构通过读取字符串，实现了 io.Reader，io.ReaderAt，
 // io.Seeker，io.WriterTo，io.ByteScanner，io.RuneScanner 接口
 type Reader struct {
-	s string // 要读取的字符串
-	i int // 当前读取的索引位置，从 i 处开始读取数据
-	prevRune int // 读取的前一个字符的索引位置，小于 0 表示之前未读取字符
+	s        string // 要读取的字符串
+	i        int    // 当前读取的索引位置，从 i 处开始读取数据
+	prevRune int    // 读取的前一个字符的索引位置，小于 0 表示之前未读取字符
 }
 
 // 通过字符串 s 创建 strings.Reader 对象
@@ -73,7 +73,6 @@ type Reader struct {
 func NewReader(s string) *Reader {
 	return &Reader{s, 0, -1}
 }
-
 
 func main() {
 	s := "Hello 世界!"
@@ -133,11 +132,11 @@ func main() {
 	// 创建读取缓冲区
 	b1 := make([]byte, 5)
 	// 读取 r 中指定位置的内容
-	r1.Seek(6, 0) // 移动索引位置到第 7 个字节
-	r1.Read(b1)    // 开始读取
+	r1.Seek(6, 0)          // 移动索引位置到第 7 个字节
+	r1.Read(b1)            // 开始读取
 	fmt.Printf("%q\n", b1) // World
-	r1.Seek(-5, 1) // 将索引位置移回去
-	r1.Read(b1)     // 继续读取
+	r1.Seek(-5, 1)         // 将索引位置移回去
+	r1.Read(b1)            // 继续读取
 	fmt.Printf("%q\n", b1) // Hello
 
 	// 创建 bytes.Buffer 对象，它实现了 io.Writer 接口

@@ -22,11 +22,11 @@ SplitAfterN 以 sep 为分隔符，将 s 切分成多个子串，结果中包含
 如果 n 为 0，则返回 nil，如果 n 小于 0，则不限制切分个数，全部切分
 
 func SplitAfterN(s, sep string, n int) []string
- */
+*/
 
 import (
-	"strings"
 	"fmt"
+	"strings"
 )
 
 func main() {

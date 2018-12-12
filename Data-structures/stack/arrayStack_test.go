@@ -1,9 +1,9 @@
 package stack
 
 import (
-	"testing"
-	"reflect"
 	"fmt"
+	"reflect"
+	"testing"
 )
 
 func Test_Stack(t *testing.T) {
@@ -18,6 +18,6 @@ func Test_Stack(t *testing.T) {
 
 	str1 := "()[]{}"
 	str2 := "([)]"
-	t.Logf("the string is %s, and isVaild result is %v",str1,isValid(str1))
-	t.Logf("the string is %s, and isVaild result is %v",str2,isValid(str2))
+	t.Logf("the string is %s, and isVaild result is %v", str1, isValid(str1))
+	t.Logf("the string is %s, and isVaild result is %v", str2, isValid(str2))
 }

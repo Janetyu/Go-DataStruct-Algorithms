@@ -42,11 +42,11 @@ ValidRune(r rune) bool
 
 ValidString(s string) bool
 检测字符串 string s 是否包含完整且合法的 UTF-8 编码序列。
- */
+*/
 
 import (
-	"unicode/utf8"
 	"fmt"
+	"unicode/utf8"
 )
 
 func main() {
@@ -59,7 +59,6 @@ func main() {
 	// 23567 就是 小 的 unicode 码值
 	utf8.DecodeRune([]byte("小韩说课")) // 返回 23567 3
 
-
 	// 23567 就是 小 的 unicode 码值
 	utf8.DecodeRuneInString("小韩说课") // 返回 23567 3
 
@@ -68,19 +67,19 @@ func main() {
 	fmt.Println(buf, n) // 输出 [229 186 183] 3
 
 	buf = []byte{229, 186, 183} // 康
-	utf8.FullRune(buf) // 返回 true
-	utf8.FullRune(buf[:2]) // 返回 false
+	utf8.FullRune(buf)          // 返回 true
+	utf8.FullRune(buf[:2])      // 返回 false
 
-	buf2 := "康" // 康
-	utf8.FullRuneInString(buf2) // 返回 true
+	buf2 := "康"                     // 康
+	utf8.FullRuneInString(buf2)     // 返回 true
 	utf8.FullRuneInString(buf2[:2]) // 返回 false
 
 	buf3 := []byte("小韩说课")
 	fmt.Println(len(buf3)) // 返回 12
-	utf8.RuneCount(buf3) // 返回 4
+	utf8.RuneCount(buf3)   // 返回 4
 
 	buf4 := "小韩说课"
-	fmt.Println(len(buf4)) // 返回 12
+	fmt.Println(len(buf4))       // 返回 12
 	utf8.RuneCountInString(buf4) // 返回 4
 
 	utf8.RuneLen('康') // 返回 3
@@ -93,16 +92,16 @@ func main() {
 
 	valid := []byte("小韩说课")
 	invalid := []byte{0xff, 0xfe, 0xfd}
-	utf8.Valid(valid) // 返回 true
+	utf8.Valid(valid)   // 返回 true
 	utf8.Valid(invalid) // 返回 false
 
 	valid2 := 'a'
 	invalid2 := rune(0xfffffff)
-	fmt.Println(utf8.ValidRune(valid2)) // 返回 true
+	fmt.Println(utf8.ValidRune(valid2))   // 返回 true
 	fmt.Println(utf8.ValidRune(invalid2)) // 返回 false
 
 	valid3 := "小韩说课"
 	invalid3 := string([]byte{0xff, 0xfe, 0xfd})
-	fmt.Println(utf8.ValidString(valid3)) // 返回 true
+	fmt.Println(utf8.ValidString(valid3))   // 返回 true
 	fmt.Println(utf8.ValidString(invalid3)) // 返回 false
 }

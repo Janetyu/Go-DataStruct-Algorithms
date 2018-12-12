@@ -22,7 +22,7 @@ TrimSuffix 删除 s 尾部的 suffix 字符串
 如果 s 不是以 suffix 结尾，则返回原始 s
 
 func TrimSuffix(s, suffix string) string
- */
+*/
 
 import (
 	"fmt"
@@ -31,13 +31,13 @@ import (
 
 func main() {
 	s := " ThisThis is a Go program!This "
-	fmt.Println(s) //原生打印
+	fmt.Println(s)                    //原生打印
 	fmt.Println(strings.TrimSpace(s)) //剔除空格后的字符串
 
 	s1 := "ThisThis is a Go program!This"
-	fmt.Println(strings.Trim(s1, "This")) // is a Go program!
-	fmt.Println(strings.TrimLeft(s1, "This"))//is a Go program!This
-	fmt.Println(strings.TrimRight(s1, "This"))//ThisThis is a Go program!
+	fmt.Println(strings.Trim(s1, "This"))      // is a Go program!
+	fmt.Println(strings.TrimLeft(s1, "This"))  //is a Go program!This
+	fmt.Println(strings.TrimRight(s1, "This")) //ThisThis is a Go program!
 
 	//注：TrimSuffix只是去掉s字符串结尾的suffix字符串，只是去掉１次，
 	// 而TrimRight是一直去掉s字符串右边的字符串，只要有响应的字符串就去掉，

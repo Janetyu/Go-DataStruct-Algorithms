@@ -6,18 +6,18 @@ func ShellSort(arr []int) []int {
 	var temp int
 	len := len(arr) // 10
 	gap := 1
-	for gap < len / 3 { // 动态定义间隔序列
-		gap = gap * 3 + 1 // grap==4
+	for gap < len/3 { // 动态定义间隔序列
+		gap = gap*3 + 1 // grap==4
 	}
 
-	for ;gap > 0; gap = gap / 3 {
+	for ; gap > 0; gap = gap / 3 {
 		for i := gap; i < len; i++ {
 			temp = arr[i]
 			var j int
-			for j = i - gap;j >= 0 && arr[j] > temp;j -= gap {
-				arr[j + gap] = arr[j]
+			for j = i - gap; j >= 0 && arr[j] > temp; j -= gap {
+				arr[j+gap] = arr[j]
 			}
-			arr[j + gap] = temp
+			arr[j+gap] = temp
 		}
 	}
 
