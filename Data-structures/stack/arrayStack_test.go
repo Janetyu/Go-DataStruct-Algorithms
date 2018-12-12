@@ -15,4 +15,9 @@ func Test_Stack(t *testing.T) {
 
 	stack.Pop()
 	fmt.Println(stack)
+
+	str1 := "()[]{}"
+	str2 := "([)]"
+	t.Logf("the string is %s, and isVaild result is %v",str1,isValid(str1))
+	t.Logf("the string is %s, and isVaild result is %v",str2,isValid(str2))
 }
