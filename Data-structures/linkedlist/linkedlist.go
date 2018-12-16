@@ -5,6 +5,11 @@ import (
 	"bytes"
 )
 
+type LinkedList struct {
+	dummyHead *Node // 虚拟头结点
+	size int
+}
+
 type Node struct {
 	e interface{}
 	next *Node
@@ -24,12 +29,6 @@ func CreateNilNode() *Node {
 
 func (n *Node)String() string {
 	return fmt.Sprint(n.e)
-}
-
-
-type LinkedList struct {
-	dummyHead *Node // 虚拟头结点
-	size int
 }
 
 func CreateLinkedList() *LinkedList {

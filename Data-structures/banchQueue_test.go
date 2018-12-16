@@ -4,11 +4,10 @@ import (
 	"testing"
 	"reflect"
 	"time"
-	"math/rand"
-	"math"
 
 	. "Go-DataStruct-Algorithms/Data-structures/queue"
 	. "Go-DataStruct-Algorithms/Data-structures/loopqueue"
+	"Go-DataStruct-Algorithms/util"
 )
 
 func Test_QueueBanch(t *testing.T)  {
@@ -16,19 +15,19 @@ func Test_QueueBanch(t *testing.T)  {
 	opCount := 10000
 
 	queue = CreatedefaultQueue(reflect.Int)
-	latency := CompareTime(queue,opCount)
+	latency := CompareQueueTime(queue,opCount)
 	t.Logf("ArrayQueue, time is %-13s",latency)
 
 	queue = CreatedefaultLoopQueue(reflect.Int)
-	latency = CompareTime(queue,opCount)
+	latency = CompareQueueTime(queue,opCount)
 	t.Logf("LoopQueue, time is %-13s",latency)
 
 }
 
-func CompareTime(queue Queue,opCount int) time.Duration {
+func CompareQueueTime(queue Queue,opCount int) time.Duration {
 	start := time.Now().UTC()
 
-	randNum := rand_generator()
+	randNum := util.Rand_generator()
 	for i := 0; i < opCount ; i++  {
 		queue.Enqueue(<-randNum)
 	}
@@ -42,14 +41,3 @@ func CompareTime(queue Queue,opCount int) time.Duration {
 	return latency
 }
 
-func rand_generator() chan int{
-	out:=make(chan int)
-	go func(){
-		for{
-			rand.Seed(time.Now().Unix())
-			out <- rand.Intn(math.MaxInt64)
-
-		}
-	}()
-	return out
-}

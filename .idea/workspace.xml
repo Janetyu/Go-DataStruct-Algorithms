@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b84eb1-49ad-4789-ab46-3deb7e96974e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-structures/banchStack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-structures/banchQueue_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Data-structures/banchQueue_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go" beforeDir="false" afterPath="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="139" />
+          <entry key="go" value="153" />
           <entry key="md" value="3" />
           <entry key="s" value="1" />
         </counts>
@@ -51,21 +54,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Go" value="139" />
+          <entry key="Go" value="153" />
           <entry key="Markdown" value="3" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="12515" />
+          <entry key="go" value="12954" />
           <entry key="md" value="476" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="12515" />
+          <entry key="Go" value="12954" />
           <entry key="Markdown" value="476" />
           <entry key="PLAIN_TEXT" value="105" />
         </counts>
@@ -86,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+            <state relative-caret-position="-2726">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#20#46#0" expanded="true" />
               </folding>
@@ -95,32 +98,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist_test.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="333">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
-                <element signature="e#20#48#0" expanded="true" />
+                <element signature="e#20#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-structures/array/array.go">
+        <entry file="file://$PROJECT_DIR$/Data-structures/banchQueue_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3059">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="114">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data-structures/banchStack_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <element signature="e#25#207#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-structures/array/array_test.go">
+        <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+            <state relative-caret-position="95">
+              <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -141,11 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/algorithm/sort/quick/quickSort_test.go" />
-        <option value="$PROJECT_DIR$/algorithm/sort/quick/quickSort.go" />
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/haxPrefix/main.go" />
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/hasSuffix/main.go" />
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/hasPrefix/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/lastIndex/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/indexRune/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/count/main.go" />
@@ -187,11 +215,16 @@
         <option value="$PROJECT_DIR$/Data-structures/queue/banchQueue.go" />
         <option value="$PROJECT_DIR$/Data-structures/banchQueue.go" />
         <option value="$PROJECT_DIR$/Data-structures/loopqueue/loopQueue_test.go" />
-        <option value="$PROJECT_DIR$/Data-structures/banchQueue_test.go" />
         <option value="$PROJECT_DIR$/Data-structures/main.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist_test.go" />
+        <option value="$PROJECT_DIR$/Data-structures/linkedlist/stackInterface.go" />
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go" />
+        <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go" />
+        <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack_test.go" />
+        <option value="$PROJECT_DIR$/util/util.go" />
+        <option value="$PROJECT_DIR$/Data-structures/banchQueue_test.go" />
+        <option value="$PROJECT_DIR$/Data-structures/banchStack_test.go" />
       </list>
     </option>
   </component>
@@ -201,7 +234,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-451" />
     <option name="y" value="7" />
     <option name="width" value="1936" />
@@ -233,13 +266,12 @@
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,6 +291,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\GoProject\src\Go-DataStruct-Algorithms\Data-structures\linkedlist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MyProject\GoProject\src\Go-DataStruct-Algorithms" />
       <recent name="D:\MyProject\GoProject\src\Go-DataStruct-Algorithms\Data-structures" />
@@ -279,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist">
+  <component name="RunManager" selected="Go Test.Test_StackBanch in Go-DataStruct-Algorithms/Data-structures">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-DataStruct-Algorithms" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -302,28 +337,16 @@
       <pattern value="^Test_LinkedList$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_LoopQueue in Go-DataStruct-Algorithms/Data-structures/loopqueue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-DataStruct-Algorithms" />
-      <working_directory value="$PROJECT_DIR$/Data-structures/loopqueue" />
+      <working_directory value="$PROJECT_DIR$/Data-structures/linkedlist" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="Go-DataStruct-Algorithms/Data-structures/loopqueue" />
+      <package value="Go-DataStruct-Algorithms/Data-structures/linkedlist" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_LoopQueue$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Queue in Go-DataStruct-Algorithms/Data-structures/queue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-DataStruct-Algorithms" />
-      <working_directory value="$PROJECT_DIR$/Data-structures/queue" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="Go-DataStruct-Algorithms/Data-structures/queue" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_Queue$" />
+      <pattern value="^Test_LinkedListStack$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -338,33 +361,36 @@
       <pattern value="^Test_QueueBanch$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-DataStruct-Algorithms" />
+      <working_directory value="$PROJECT_DIR$/Data-structures" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Go-DataStruct-Algorithms/Data-structures" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_StackBanch$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Test.Test_Queue in Go-DataStruct-Algorithms/Data-structures/queue" />
-      <item itemvalue="Go Test.Test_LoopQueue in Go-DataStruct-Algorithms/Data-structures/loopqueue" />
       <item itemvalue="Go Test.Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Test.Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
+      <item itemvalue="Go Test.Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
+      <item itemvalue="Go Test.Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" />
+        <item itemvalue="Go Test.Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
         <item itemvalue="Go Test.Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" />
-        <item itemvalue="Go Test.Test_LoopQueue in Go-DataStruct-Algorithms/Data-structures/loopqueue" />
-        <item itemvalue="Go Test.Test_Queue in Go-DataStruct-Algorithms/Data-structures/queue" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 20h 48m 34s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 20h 48m 43s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 20h 50m 00s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 21h 12m 39s.xml">
       <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -386,17 +412,25 @@
     <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 22h 44m 29s.xml">
       <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="Test_LinkedListStack_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 23h 56m 10s.xml">
+      <configuration name="Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_StackBanch_in_Go-DataStruct-Algorithms_Data-structures - 2018.12.17 at 00h 06m 14s.xml">
+      <configuration name="Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_StackBanch_in_Go-DataStruct-Algorithms_Data-structures - 2018.12.17 at 00h 06m 42s.xml">
+      <configuration name="Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.24961948" />
       <window_info id="Structure" order="1" sideWeight="0.50248754" side_tool="true" weight="0.30517504" />
       <window_info id="Favorites" order="2" sideWeight="0.5021645" side_tool="true" weight="0.3006088" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32006633" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4941957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,41 +485,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implementing dynamic arraylist by go" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithm/sort/quick/quickSort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/hasSuffix/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/hasPrefix/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/lastIndex/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/indexRune/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/repeat/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -672,20 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/stack/stackInterface.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -700,21 +685,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="47" selection-start-line="47" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/loopqueue/queueInterface.go" />
-    <entry file="file://$PROJECT_DIR$/Data-structures/queue/queueInterface.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/loopqueue/loopQueue_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -726,20 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/loopqueue/loopQueue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/banchQueue_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -785,22 +742,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-          <folding>
-            <element signature="e#20#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="e#20#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/queue/queueInterface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/stack/stackInterface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/stackInterface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/loopqueue/loopQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2726">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#20#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/stack/arrayStack_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" selection-start-line="9" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#20#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/banchQueue_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/banchStack_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#25#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
