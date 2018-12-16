@@ -7,12 +7,13 @@ import (
 
 	. "Go-DataStruct-Algorithms/Data-structures/queue"
 	. "Go-DataStruct-Algorithms/Data-structures/loopqueue"
+	. "Go-DataStruct-Algorithms/Data-structures/linkedlist"
 	"Go-DataStruct-Algorithms/util"
 )
 
 func Test_QueueBanch(t *testing.T)  {
 	var queue Queue
-	opCount := 10000
+	opCount := 100000
 
 	queue = CreatedefaultQueue(reflect.Int)
 	latency := CompareQueueTime(queue,opCount)
@@ -22,6 +23,9 @@ func Test_QueueBanch(t *testing.T)  {
 	latency = CompareQueueTime(queue,opCount)
 	t.Logf("LoopQueue, time is %-13s",latency)
 
+	queue = CreateLinkedListQueue()
+	latency = CompareQueueTime(queue,opCount)
+	t.Logf("LinkedListQueue, time is %-13s",latency)
 }
 
 func CompareQueueTime(queue Queue,opCount int) time.Duration {
