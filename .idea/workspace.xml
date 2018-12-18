@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b84eb1-49ad-4789-ab46-3deb7e96974e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="166" />
+          <entry key="go" value="167" />
           <entry key="md" value="3" />
           <entry key="s" value="1" />
         </counts>
@@ -50,21 +50,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Go" value="166" />
+          <entry key="Go" value="167" />
           <entry key="Markdown" value="3" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="13802" />
+          <entry key="go" value="14264" />
           <entry key="md" value="476" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="13802" />
+          <entry key="Go" value="14264" />
           <entry key="Markdown" value="476" />
           <entry key="PLAIN_TEXT" value="105" />
         </counts>
@@ -72,7 +72,7 @@
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
         <counts>
           <entry key=".cap" value="7" />
-          <entry key=".len" value="2" />
+          <entry key=".len" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -85,17 +85,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2147">
+            <state relative-caret-position="361">
               <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+            <state relative-caret-position="-541">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -103,8 +112,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="342">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+              <folding>
+                <element signature="e#37#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/join/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strconv/demo/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/contains/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/index/main.go" />
@@ -183,8 +194,9 @@
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListQueue.go" />
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListQueue_test.go" />
         <option value="$PROJECT_DIR$/Data-structures/banchQueue_test.go" />
-        <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" />
         <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" />
+        <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" />
+        <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" />
       </list>
     </option>
   </component>
@@ -221,6 +233,12 @@
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -409,7 +427,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.27245054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.27245054" />
       <window_info id="Structure" order="1" sideWeight="0.50248754" side_tool="true" weight="0.30517504" />
       <window_info id="Favorites" order="2" sideWeight="0.5021645" side_tool="true" weight="0.3006088" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -421,7 +439,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.29353234" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" visible="true" weight="0.23383084" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" visible="true" weight="0.23383084" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50076103" side_tool="true" weight="0.42951906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -469,13 +487,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implementing dynamic arraylist by go" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/split/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/fields/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -783,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -799,15 +803,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2147">
+        <state relative-caret-position="361">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="-541">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
