@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b84eb1-49ad-4789-ab46-3deb7e96974e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-structures/recursive/sum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-structures/recursive/sum_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,33 +18,33 @@
     <session id="-713312758">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="37" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="5" />
-          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.17" value="5" />
           <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="167" />
+          <entry key="go" value="172" />
           <entry key="md" value="3" />
           <entry key="s" value="1" />
         </counts>
@@ -50,21 +52,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Go" value="167" />
+          <entry key="Go" value="172" />
           <entry key="Markdown" value="3" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="14264" />
+          <entry key="go" value="14824" />
           <entry key="md" value="476" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="14264" />
+          <entry key="Go" value="14824" />
           <entry key="Markdown" value="476" />
           <entry key="PLAIN_TEXT" value="105" />
         </counts>
@@ -72,7 +74,7 @@
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
         <counts>
           <entry key=".cap" value="7" />
-          <entry key=".len" value="4" />
+          <entry key=".len" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -83,19 +85,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedlist.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-541">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="32">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -103,29 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding>
-                <element signature="e#37#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-structures/linkedlist/linkedListStack.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="89">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -146,8 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strconv/demo/main.go" />
-        <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/contains/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/index/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/split/main.go" />
         <option value="$PROJECT_DIR$/standard-lib-learn/go-strings/fields/main.go" />
@@ -194,8 +164,10 @@
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListQueue.go" />
         <option value="$PROJECT_DIR$/Data-structures/linkedlist/linkedListQueue_test.go" />
         <option value="$PROJECT_DIR$/Data-structures/banchQueue_test.go" />
-        <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" />
         <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go" />
+        <option value="$PROJECT_DIR$/Data-structures/recursive/sum_test.go" />
+        <option value="$PROJECT_DIR$/Data-structures/recursive/sum.go" />
+        <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go" />
         <option value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go" />
       </list>
     </option>
@@ -221,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,44 +200,11 @@
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="remove-linked-list-elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,19 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures">
-    <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-DataStruct-Algorithms" />
-      <working_directory value="$PROJECT_DIR$/Data-structures/linkedlist" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="Go-DataStruct-Algorithms/Data-structures/linkedlist" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_LinkedList$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements">
     <configuration name="Test_LinkedListQueue in Go-DataStruct-Algorithms/Data-structures/linkedlist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-DataStruct-Algorithms" />
       <working_directory value="$PROJECT_DIR$/Data-structures/linkedlist" />
@@ -327,18 +253,6 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^Test_LinkedListQueue$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="Go-DataStruct-Algorithms" />
-      <working_directory value="$PROJECT_DIR$/Data-structures/linkedlist" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="Go-DataStruct-Algorithms/Data-structures/linkedlist" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test_LinkedListStack$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -353,6 +267,18 @@
       <pattern value="^Test_QueueBanch$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-DataStruct-Algorithms" />
+      <working_directory value="$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_RemoveElements$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Go-DataStruct-Algorithms" />
       <working_directory value="$PROJECT_DIR$/Data-structures" />
@@ -365,39 +291,36 @@
       <pattern value="^Test_StackBanch$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_Sum in Go-DataStruct-Algorithms/Data-structures/recursive" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go-DataStruct-Algorithms" />
+      <working_directory value="$PROJECT_DIR$/Data-structures/recursive" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Go-DataStruct-Algorithms/Data-structures/recursive" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_Sum$" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Test.Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
-      <item itemvalue="Go Test.Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
       <item itemvalue="Go Test.Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" />
       <item itemvalue="Go Test.Test_LinkedListQueue in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
       <item itemvalue="Go Test.Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" />
+      <item itemvalue="Go Test.Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" />
+      <item itemvalue="Go Test.Test_Sum in Go-DataStruct-Algorithms/Data-structures/recursive" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" />
+        <item itemvalue="Go Test.Test_Sum in Go-DataStruct-Algorithms/Data-structures/recursive" />
         <item itemvalue="Go Test.Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" />
         <item itemvalue="Go Test.Test_LinkedListQueue in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
         <item itemvalue="Go Test.Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" />
-        <item itemvalue="Go Test.Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
-        <item itemvalue="Go Test.Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 22h 07m 52s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 22h 38m 57s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 22h 39m 58s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedList_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 22h 44m 29s.xml">
-      <configuration name="Test_LinkedList in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_LinkedListStack_in_Go-DataStruct-Algorithms_Data-structures_linkedlist - 2018.12.16 at 23h 56m 10s.xml">
-      <configuration name="Test_LinkedListStack in Go-DataStruct-Algorithms/Data-structures/linkedlist" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="Test_StackBanch_in_Go-DataStruct-Algorithms_Data-structures - 2018.12.17 at 00h 06m 14s.xml">
       <configuration name="Test_StackBanch in Go-DataStruct-Algorithms/Data-structures" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -413,6 +336,21 @@
     <history-entry file="Test_QueueBanch_in_Go-DataStruct-Algorithms_Data-structures - 2018.12.17 at 00h 39m 21s.xml">
       <configuration name="Test_QueueBanch in Go-DataStruct-Algorithms/Data-structures" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="Test_RemoveElements_in_Go-DataStruct-Algorithms_leetcode_simple_remove-linked-list-elements - 2018.12.18 at 15h 39m 52s.xml">
+      <configuration name="Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_RemoveElements_in_Go-DataStruct-Algorithms_leetcode_simple_remove-linked-list-elements - 2018.12.18 at 15h 40m 38s.xml">
+      <configuration name="Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_Sum_in_Go-DataStruct-Algorithms_Data-structures_recursive - 2018.12.19 at 17h 51m 22s.xml">
+      <configuration name="Test_Sum in Go-DataStruct-Algorithms/Data-structures/recursive" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_RemoveElements_in_Go-DataStruct-Algorithms_leetcode_simple_remove-linked-list-elements - 2018.12.20 at 16h 41m 45s.xml">
+      <configuration name="Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_RemoveElements_in_Go-DataStruct-Algorithms_leetcode_simple_remove-linked-list-elements - 2018.12.20 at 16h 42m 27s.xml">
+      <configuration name="Test_RemoveElements in Go-DataStruct-Algorithms/leetcode/simple/remove-linked-list-elements" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,19 +365,19 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.27245054" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.2305936" />
       <window_info id="Structure" order="1" sideWeight="0.50248754" side_tool="true" weight="0.30517504" />
       <window_info id="Favorites" order="2" sideWeight="0.5021645" side_tool="true" weight="0.3006088" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38640133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38640133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966834" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.29353234" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" visible="true" weight="0.23383084" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" weight="0.23383084" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50076103" side_tool="true" weight="0.42951906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -487,20 +425,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implementing dynamic arraylist by go" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/fields/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/fieldsFunc/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/standard-lib-learn/go-strings/map/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -808,27 +732,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go">
+    <entry file="file://$PROJECT_DIR$/Data-structures/recursive/sum_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/recursive/sum.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/listNode.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="e#37#67#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/removeElements.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/simple/remove-linked-list-elements/remove_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="89">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>

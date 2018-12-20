@@ -3,7 +3,7 @@ package remove_linked_list_elements
 import "testing"
 
 func Test_RemoveElements(t *testing.T)  {
-	arr := []int{1,2,6,3,4,5,6}
+	arr := []int{1,2,6,3,4,5,6,8,8,7,2,1,1}
 	head := new(ListNode)
 	head = head.CreateListNode(arr)
 	t.Log(head.String())
@@ -13,6 +13,14 @@ func Test_RemoveElements(t *testing.T)  {
 	t.Log(res)
 
 	t.Logf("test removeElements2: \n")
-	res = removeElements2(head,6)
+	res = removeElements2(head,8)
+	t.Log(res)
+
+	t.Logf("test removeElements3: \n")
+	res = removeElements3(head,2)
+	t.Log(res)
+
+	t.Logf("test removeElements4: \n")
+	res = removeElements4(head,1)
 	t.Log(res)
 }
