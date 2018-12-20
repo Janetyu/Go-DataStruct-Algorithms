@@ -1,5 +1,11 @@
 package remove_linked_list_elements
 
+import (
+	"bytes"
+	"fmt"
+	"strconv"
+)
+
 /**
  * LeetCode T203
  * Definition for singly-linked list.
@@ -95,4 +101,42 @@ func removeElements4(head *ListNode, val int) *ListNode {
 	// go语言没有三元运算符
 	//return (head.Val == val)?head.Next:head
 }
+
+// 利用打印输出理解递归
+func removeElements5(head *ListNode, val, depth int) *ListNode {
+
+	depthString := genernateDepthString(depth)
+
+	fmt.Print(depthString)
+	fmt.Println("Call: remove " + strconv.Itoa(val) + " in " + head.String())
+	if head == nil {
+		fmt.Print(depthString)
+		fmt.Println("Return: " + head.String())
+		return nil
+	}
+
+	res := removeElements5(head.Next,val,depth+1)
+	fmt.Print(depthString)
+	fmt.Println("After remove " + strconv.Itoa(val) + ": " + res.String())
+
+	ret := &ListNode{}
+	if head.Val == val {
+		ret = res
+	} else {
+		head.Next = res
+		ret = head
+	}
+	fmt.Print(depthString)
+	fmt.Println("Return: " + ret.String())
+	return ret
+}
+
+func genernateDepthString(depth int) string {
+	var buffer bytes.Buffer
+	for i := 0; i < depth ; i++ {
+		buffer.WriteString("--")
+	}
+	return buffer.String()
+}
+
 

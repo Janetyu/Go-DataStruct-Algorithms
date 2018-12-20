@@ -23,4 +23,11 @@ func Test_RemoveElements(t *testing.T)  {
 	t.Logf("test removeElements4: \n")
 	res = removeElements4(head,1)
 	t.Log(res)
+
+	arr2 := []int{1,2,6,3,4,5,6}
+	head = head.CreateListNode(arr2)
+	t.Log(head.String())
+	t.Logf("test removeElements5: \n")
+	res = removeElements5(head,6,0)
+	t.Log(res)
 }
