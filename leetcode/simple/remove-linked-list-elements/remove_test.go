@@ -30,4 +30,8 @@ func Test_RemoveElements(t *testing.T)  {
 	t.Logf("test removeElements5: \n")
 	res = removeElements5(head,6,0)
 	t.Log(res)
+
+	t.Logf("test addElements: \n")
+	res = addElements(head,6)
+	t.Log(res)
 }

@@ -85,6 +85,16 @@ func removeElements3(head *ListNode, val int) *ListNode {
 	}
 }
 
+// 递归实现尾部插入元素
+func addElements(head *ListNode, val int) *ListNode {
+	if head == nil {
+		return &ListNode{val,nil}
+	} else {
+		head.Next = addElements(head.Next,val)
+		return head
+	}
+}
+
 // 简化递归删除链表元素
 func removeElements4(head *ListNode, val int) *ListNode {
 	if head == nil {
