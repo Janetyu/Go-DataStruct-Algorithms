@@ -59,6 +59,11 @@ func (list *LinkedList)Add(index int, e interface{}) {
 	list.size++
 }
 
+// 链表添加元素递归写法
+func (list *LinkedList)AddForRecursive()  {
+
+}
+
 // 向链表头添加新的元素e
 func (list *LinkedList)AddFirst(e interface{}) {
 	//n := Node{e,Node{}}
