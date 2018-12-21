@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"bytes"
 	"strconv"
+	"Go-DataStruct-Algorithms/Data-structures/stack"
+	"reflect"
 )
 
 /**
@@ -116,7 +118,7 @@ func (b *BST)PreOrder()  {
 }
 
 // 前序遍历以node为根的二分搜索树，递归算法
-func (b *BST)preOrder(node *Node)  {
+func (b *BST)preOrder(node *Node) {
 	if node == nil {
 		return
 	}
@@ -124,6 +126,57 @@ func (b *BST)preOrder(node *Node)  {
 	fmt.Println(node.e)
 	b.preOrder(node.left)
 	b.preOrder(node.right)
+}
+
+// 二分搜索树的前序遍历，非递归
+func (b *BST)PreOrderNR()  {
+	newstack := stack.CreatedefaultStack(reflect.Int)
+
+	newstack.Push(b.root)
+	for !newstack.IsEmpty() {
+		cur := newstack.Pop()
+		fmt.Println(cur.(*Node).e)
+
+		// 后进先出，所以先压入右子树，再压入左子树
+		if cur.(*Node).right != nil {
+			newstack.Push(cur.(*Node).right)
+		}
+		if cur.(*Node).left != nil {
+			newstack.Push(cur.(*Node).left)
+		}
+	}
+}
+
+// 二分搜索树的中序遍历
+func (b *BST)InOrder()  {
+	b.inOrder(b.root)
+}
+
+// 中序遍历以node为根的二分搜索树，递归算法
+func (b *BST)inOrder(node *Node)  {
+	if node == nil {
+		return
+	}
+
+	b.inOrder(node.left)
+	fmt.Println(node.e)
+	b.inOrder(node.right)
+}
+
+// 二分搜索树的后序遍历
+func (b *BST)PostOrder()  {
+	b.inOrder(b.root)
+}
+
+// 后序遍历以node为根的二分搜索树，递归算法
+func (b *BST)postOrder(node *Node)  {
+	if node == nil {
+		return
+	}
+
+	b.inOrder(node.left)
+	b.inOrder(node.right)
+	fmt.Println(node.e)
 }
 
 func (b *BST)String() string {

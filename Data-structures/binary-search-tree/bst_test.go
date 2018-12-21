@@ -11,5 +11,11 @@ func Test_BST(t *testing.T)  {
 
 	bst.PreOrder()
 
+	bst.InOrder()
+
+	bst.PostOrder()
+
+	bst.PreOrderNR()
+
 	t.Log("\n" + bst.String())
 }
