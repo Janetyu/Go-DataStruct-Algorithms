@@ -1,5 +1,11 @@
 package binary_search_tree
 
+import (
+	"fmt"
+	"bytes"
+	"strconv"
+)
+
 /**
 这里的二分搜索树不包含重复元素，定义为：
 每个节点的值：
@@ -82,4 +88,66 @@ func (b *BST)add(node *Node,e int) *Node {
 	}
 
 	return node
+}
+
+// 查询二分搜索树是否包含元素e
+func (b *BST)Contains(e int) bool {
+	return b.contains(b.root,e)
+}
+
+// 以node为根的二分搜索树中是否包含元素e，递归
+func (b *BST)contains(node *Node,e int) bool {
+	if node == nil {
+		return false
+	}
+
+	if node.e == e {
+		return true
+	} else if node.e > e {
+		return b.contains(node.left,e)
+	} else { // node.e < e
+		return b.contains(node.right,e)
+	}
+}
+
+// 二分搜索树的前序遍历
+func (b *BST)PreOrder()  {
+	b.preOrder(b.root)
+}
+
+// 前序遍历以node为根的二分搜索树，递归算法
+func (b *BST)preOrder(node *Node)  {
+	if node == nil {
+		return
+	}
+
+	fmt.Println(node.e)
+	b.preOrder(node.left)
+	b.preOrder(node.right)
+}
+
+func (b *BST)String() string {
+	var buffer bytes.Buffer
+	b.generateBSTString(b.root,0,&buffer)
+	return buffer.String()
+}
+
+// 生成以node为根节点，深度为depth的秒速二叉树的字符串
+func (b *BST)generateBSTString(node *Node,depth int,buffer *bytes.Buffer)  {
+	if node == nil {
+		buffer.WriteString(b.generateDepthString(depth) + "null\n")
+		return
+	}
+
+	buffer.WriteString(b.generateDepthString(depth) + strconv.Itoa(node.e) + "\n")
+	b.generateBSTString(node.left, depth + 1, buffer)
+	b.generateBSTString(node.right,depth + 1, buffer)
+}
+
+func (b *BST)generateDepthString(depth int) string {
+	var buffer bytes.Buffer
+	for i := 0; i < depth; i++ {
+		buffer.WriteString("--")
+	}
+	return buffer.String()
 }
