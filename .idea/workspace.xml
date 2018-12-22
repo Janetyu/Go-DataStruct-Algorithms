@@ -4,7 +4,6 @@
     <list default="true" id="e8b84eb1-49ad-4789-ab46-3deb7e96974e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-structures/binary-search-tree/bst.go" beforeDir="false" afterPath="$PROJECT_DIR$/Data-structures/binary-search-tree/bst.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-structures/binary-search-tree/bst_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Data-structures/binary-search-tree/bst_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +23,7 @@
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.17" value="5" />
+          <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.19" value="4" />
           <entry key="project.open.time.2" value="1" />
@@ -36,13 +35,13 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="49" />
+          <entry key="project.opened" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="181" />
+          <entry key="go" value="182" />
           <entry key="md" value="3" />
           <entry key="s" value="1" />
         </counts>
@@ -50,21 +49,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Go" value="181" />
+          <entry key="Go" value="182" />
           <entry key="Markdown" value="3" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="17776" />
+          <entry key="go" value="18066" />
           <entry key="md" value="476" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="17776" />
+          <entry key="Go" value="18066" />
           <entry key="Markdown" value="476" />
           <entry key="PLAIN_TEXT" value="105" />
         </counts>
@@ -85,11 +84,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Data-structures/binary-search-tree/bst.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+            <state relative-caret-position="257">
+              <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
               <folding>
-                <element signature="e#28#65#0" expanded="true" />
+                <element signature="e#28#126#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data-structures/queue/arrayQueue.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -194,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +237,12 @@
               <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go-DataStruct-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go-DataStruct-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Data-structures" type="462c0819:PsiDirectoryNode" />
               <item name="stack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,7 +267,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,8 +425,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.24809742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49751243" visible="true" weight="0.2526636" />
       <window_info id="Structure" order="1" sideWeight="0.50248754" side_tool="true" weight="0.30517504" />
       <window_info id="Favorites" order="2" sideWeight="0.5021645" side_tool="true" weight="0.3006088" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,7 +439,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.62023216" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" visible="true" weight="0.23383084" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49923897" visible="true" weight="0.23383084" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50076103" side_tool="true" weight="0.42951906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -596,13 +611,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/loopqueue/queueInterface.go" />
-    <entry file="file://$PROJECT_DIR$/Data-structures/queue/arrayQueue.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -807,12 +815,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data-structures/queue/arrayQueue.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data-structures/binary-search-tree/bst.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="142" column="9" lean-forward="true" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+        <state relative-caret-position="257">
+          <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
           <folding>
-            <element signature="e#28#65#0" expanded="true" />
+            <element signature="e#28#126#0" expanded="true" />
           </folding>
         </state>
       </provider>

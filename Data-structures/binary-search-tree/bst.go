@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"bytes"
 	"strconv"
-	"Go-DataStruct-Algorithms/Data-structures/stack"
 	"reflect"
+
+	"Go-DataStruct-Algorithms/Data-structures/stack"
+	"Go-DataStruct-Algorithms/Data-structures/queue"
 )
 
 /**
@@ -130,6 +132,7 @@ func (b *BST)preOrder(node *Node) {
 
 // 二分搜索树的前序遍历，非递归
 func (b *BST)PreOrderNR()  {
+	// 利用了栈这个结构
 	newstack := stack.CreatedefaultStack(reflect.Int)
 
 	newstack.Push(b.root)
@@ -177,6 +180,27 @@ func (b *BST)postOrder(node *Node)  {
 	b.inOrder(node.left)
 	b.inOrder(node.right)
 	fmt.Println(node.e)
+}
+
+// 层序遍历二分搜索树（广度优先遍历）
+func (b *BST)LevelOrder()  {
+	// 利用了队列这种数据结构
+	queue := queue.CreatedefaultQueue(reflect.Int)
+
+	// 根节点先入队
+	queue.Enqueue(b.root)
+	for !queue.IsEmpty() {
+		cur := queue.Dequeue()
+		fmt.Println(cur.(*Node).e)
+
+		// 队列先进先出，所以左子树先入队，右子树后入队
+		if cur.(*Node).left != nil {
+			queue.Enqueue(cur.(*Node).left)
+		}
+		if cur.(*Node).right != nil {
+			queue.Enqueue(cur.(*Node).right)
+		}
+	}
 }
 
 func (b *BST)String() string {
