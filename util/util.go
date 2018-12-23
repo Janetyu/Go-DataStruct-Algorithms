@@ -11,7 +11,7 @@ func Rand_generator() chan int{
 	go func(){
 		for{
 			rand.Seed(time.Now().Unix())
-			out <- rand.Intn(math.MaxInt64)
+			out <- rand.Intn(math.MaxInt8)
 
 		}
 	}()

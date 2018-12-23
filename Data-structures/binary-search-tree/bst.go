@@ -203,6 +203,180 @@ func (b *BST)LevelOrder()  {
 	}
 }
 
+// 寻找二分搜索树的最小元素
+func (b *BST)Minimum() int {
+	if b.size == 0 {
+		panic("BST is empty!")
+	}
+
+	return b.minimum(b.root).e
+}
+
+// 返回以node为根的二分搜索树的最小值所在的节点
+func (b *BST)minimum(node *Node) *Node {
+	if node.left == nil {
+		return node
+	}
+	return b.minimum(node.left)
+}
+
+// 非递归实现寻找二分搜索树的最小元素
+func (b *BST)MinimumNR() int {
+	if b.size == 0 {
+		panic("BST is empty!")
+	}
+
+	cur := b.root
+	if cur.left != nil {
+		cur = cur.left
+	}
+
+	// cur.left == nil
+	return cur.e
+}
+
+// 寻找二分搜索树的最大元素
+func (b *BST)Maximum() int {
+	if b.size == 0 {
+		panic("BST is empty!")
+	}
+
+	return b.maximum(b.root).e
+}
+
+// 返回以node为根的二分搜索树的最大值所在的节点
+func (b *BST)maximum(node *Node) *Node {
+	if node.right == nil {
+		return node
+	}
+	return b.maximum(node.right)
+}
+
+// 非递归实现寻找二分搜索树的最大元素
+func (b *BST)MaximumNR() int {
+	if b.size == 0 {
+		panic("BST is empty!")
+	}
+
+	cur := b.root
+	if cur.right != nil {
+		cur = cur.right
+	}
+
+	// cur.left == nil
+	return cur.e
+}
+
+// 从二分搜索树中删除最小值所在的节点，并返回最小值
+func (b *BST)RemoveMin() int {
+	min := b.Minimum()
+	b.root = b.removeMin(b.root)
+	return min
+}
+
+// 删除掉以node为根的二分搜索树中的最小节点
+// 返回删除节点中后的新的二分搜索树的根
+func (b *BST)removeMin(node *Node) *Node {
+	// 终止条件，左子树为空
+	if node.left == nil {
+		rightNode := node.right
+		node.right = nil
+		b.size--
+		return rightNode
+	}
+
+	// 不管node.right是否为空，若最小值被删除，则最小值中的右子树变为上一节点的左子树
+	node.left = b.removeMin(node.left)
+	return node
+}
+
+// 从二分搜索树中删除最大值所在的节点，并返回最大值
+func (b *BST)RemoveMax() int {
+	max := b.Maximum()
+	b.root = b.removeMax(b.root)
+	return max
+}
+
+// 删除掉以node为根的二分搜索树中的最大节点
+// 返回删除节点中后的新的二分搜索树的根
+func (b *BST)removeMax(node *Node) *Node {
+	// 终止条件，右子树为空
+	if node.right == nil {
+		leftNode := node.left
+		node.left = nil
+		b.size--
+		return leftNode
+	}
+
+	// 不管node.left是否为空，若最大值被删除，则最大值中的左子树变为上一节点的右子树
+	node.right = b.removeMax(node.right)
+	return node
+}
+
+// 从二分搜索树中删除元素为e的节点
+func (b *BST)Remove(e int)  {
+	b.root = b.remove(b.root,e)
+}
+
+// 删除以node为根的二分搜索树中值为e的节点，递归算法
+// 返回删除节点后的新的二分搜索树的根
+func (b *BST)remove(node *Node, e int) *Node {
+	// 如果节点为空，则什么都不用干
+	if node == nil {
+		return nil
+	}
+
+	if node.e > e { // 先判断小于的情况，去左子树进行搜索
+		node.left = b.remove(node.left,e)
+		return node
+	} else if node.e < e { // 先判断大于的情况，去右子树进行搜索
+		node.right = b.remove(node.right,e)
+		return node
+	} else { // 最后判断等于的情况，分只有左子树，只有右子树，有左右子树的情况
+		// 删除的节点有右子树,左子树为空
+		if node.left == nil {
+			rightNode := node.right
+			node.right = nil
+			b.size--
+			return rightNode
+		}
+
+		// 删除的节点有左子树，右子树为空
+		if node.right == nil {
+			leftNode := node.left
+			node.left = nil
+			b.size--
+			return leftNode
+		}
+
+		// 删除的节点左右子树不为空
+		// 找到比待删除节点大的最小节点，即待删除节点右子树的最小节点
+		// 用这个节点顶替待删除节点的位置
+		successor := b.minimum(node.right) // 找到后继
+		successor.right = b.removeMin(node.right)
+		// b.size++
+		successor.left = node.left
+
+		node.left = nil
+		node.right = nil
+		// b.size--
+
+		return successor
+
+
+		// 寻找前驱来删除左右子树不为空的写法
+		//predecessor := b.maximum(node.left) // 找到前驱
+		//predecessor.left = b.removeMax(node.left)
+		//predecessor.right = node.right
+		//
+		//node.left = nil
+		//node.right = nil
+		//
+		//return predecessor
+	}
+
+}
+
 func (b *BST)String() string {
 	var buffer bytes.Buffer
 	b.generateBSTString(b.root,0,&buffer)
